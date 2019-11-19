@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2868C37A23838C6E00D1CB60 /* DisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868C37923838C6E00D1CB60 /* DisplayVC.swift */; };
 		287BDACA238361E400F437C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BDAC9238361E400F437C0 /* AppDelegate.swift */; };
 		287BDACC238361E400F437C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BDACB238361E400F437C0 /* SceneDelegate.swift */; };
 		287BDAD1238361E400F437C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287BDACF238361E400F437C0 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2868C37923838C6E00D1CB60 /* DisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayVC.swift; sourceTree = "<group>"; };
 		287BDAC6238361E400F437C0 /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287BDAC9238361E400F437C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		287BDACB238361E400F437C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				287BDAC9238361E400F437C0 /* AppDelegate.swift */,
 				287BDACB238361E400F437C0 /* SceneDelegate.swift */,
 				287BDADD238363B400F437C0 /* EmojiTVC.swift */,
+				2868C37923838C6E00D1CB60 /* DisplayVC.swift */,
 				287BDACF238361E400F437C0 /* Main.storyboard */,
 				287BDAD2238361EB00F437C0 /* Assets.xcassets */,
 				287BDAD4238361EB00F437C0 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287BDADE238363B400F437C0 /* EmojiTVC.swift in Sources */,
+				2868C37A23838C6E00D1CB60 /* DisplayVC.swift in Sources */,
 				287BDACA238361E400F437C0 /* AppDelegate.swift in Sources */,
 				287BDACC238361E400F437C0 /* SceneDelegate.swift in Sources */,
 			);

@@ -33,8 +33,13 @@ class EmojiTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "ourSegue", sender: nil)
+        let emoji = emojiIcons[indexPath.row]
+        performSegue(withIdentifier: "ourSegue", sender: emoji)
         
     }
   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let emojiDisplayVC = segue.destination as! DisplayVC
+        emojiDisplayVC.emoji = sender as! String
+    }
 }

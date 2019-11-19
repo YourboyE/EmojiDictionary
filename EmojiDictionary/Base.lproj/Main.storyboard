@@ -44,14 +44,14 @@
         <!--Your Emoji-->
         <scene sceneID="Hwg-kU-LH4">
             <objects>
-                <viewController id="9C5-Dv-QOl" sceneMemberID="viewController">
+                <viewController id="9C5-Dv-QOl" customClass="DisplayVC" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HNx-30-CPQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmN-KR-C4S">
-                                <rect key="frame" x="71" y="108" width="272" height="298.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <rect key="frame" x="98" y="138" width="218" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -64,7 +64,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xmN-KR-C4S" firstAttribute="top" secondItem="bEc-pO-IPW" secondAttribute="top" constant="20" id="ODo-EM-AyI"/>
+                            <constraint firstItem="xmN-KR-C4S" firstAttribute="top" secondItem="bEc-pO-IPW" secondAttribute="top" constant="50" id="ODo-EM-AyI"/>
                             <constraint firstItem="yKB-RU-ozY" firstAttribute="bottom" secondItem="bEc-pO-IPW" secondAttribute="bottom" constant="10" id="XEh-pi-OWc"/>
                             <constraint firstItem="yKB-RU-ozY" firstAttribute="leading" secondItem="bEc-pO-IPW" secondAttribute="leading" constant="10" id="hlg-nM-lzL"/>
                             <constraint firstItem="xmN-KR-C4S" firstAttribute="centerX" secondItem="HNx-30-CPQ" secondAttribute="centerX" id="uNq-jB-Xb9"/>
@@ -73,6 +73,10 @@
                         <viewLayoutGuide key="safeArea" id="bEc-pO-IPW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Your Emoji" id="CrH-nu-WDN"/>
+                    <connections>
+                        <outlet property="iconImage" destination="xmN-KR-C4S" id="l0G-Dd-G1Y"/>
+                        <outlet property="labelText" destination="yKB-RU-ozY" id="zL5-gK-qHg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEY-So-svs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
