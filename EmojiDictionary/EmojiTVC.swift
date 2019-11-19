@@ -10,10 +10,12 @@ import UIKit
 
 class EmojiTVC: UITableViewController {
 
-    let emojiIcons = ["🥊","🥎","🥋","🛰","🗿","🎢","🔐","🕷"]
+    var emojiIcons: [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emojiIcons = createEmoji()
 
     }
 
@@ -26,7 +28,9 @@ class EmojiTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        cell.textLabel?.text = emojiIcons[indexPath.row]
+        
+        let emoji = emojiIcons[indexPath.row]
+        cell.textLabel?.text = "\(emoji.theEmoji) - \(emoji.theCategory)"
 
         return cell
     }
@@ -40,6 +44,29 @@ class EmojiTVC: UITableViewController {
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let emojiDisplayVC = segue.destination as! DisplayVC
-        emojiDisplayVC.emoji = sender as! String
+        emojiDisplayVC.emoji = sender as! Emoji
+    }
+    
+    func createEmoji() -> [Emoji]{
+        
+        let glove = Emoji()
+        glove.theEmoji = "🥊"
+        glove.theCategory = "Sport"
+        glove.theDef = "You're gonna get punched!"
+        glove.theRelDate = 1997
+        
+        let softball = Emoji()
+        softball.theEmoji = "🥎"
+        softball.theCategory = "Sports"
+        softball.theRelDate = 2009
+        softball.theDef = "Let's play ball"
+        
+        let karateGee = Emoji()
+        karateGee.theEmoji = "🥋"
+        karateGee.theCategory = "Wardrobe"
+        karateGee.theDef = "OOOOUUUUSSSSHHHH"
+        karateGee.theRelDate = 2012
+        
+        return [glove, softball, karateGee]
     }
 }

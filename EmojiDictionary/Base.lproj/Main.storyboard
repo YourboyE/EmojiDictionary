@@ -56,7 +56,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting my bumble on ! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-RU-ozY">
-                                <rect key="frame" x="10" y="851" width="394" height="21"/>
+                                <rect key="frame" x="10" y="700" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2S-Mp-RL4">
+                                <rect key="frame" x="146" y="659" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Awesomeness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvF-GB-fkV">
+                                <rect key="frame" x="112.5" y="618" width="189" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,9 +76,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="cvF-GB-fkV" firstAttribute="centerX" secondItem="HNx-30-CPQ" secondAttribute="centerX" id="13X-Di-G9b"/>
+                            <constraint firstItem="W2S-Mp-RL4" firstAttribute="top" secondItem="cvF-GB-fkV" secondAttribute="bottom" constant="20" id="2LT-xb-dvY"/>
                             <constraint firstItem="xmN-KR-C4S" firstAttribute="top" secondItem="bEc-pO-IPW" secondAttribute="top" constant="50" id="ODo-EM-AyI"/>
-                            <constraint firstItem="yKB-RU-ozY" firstAttribute="bottom" secondItem="bEc-pO-IPW" secondAttribute="bottom" constant="10" id="XEh-pi-OWc"/>
+                            <constraint firstItem="W2S-Mp-RL4" firstAttribute="centerX" secondItem="HNx-30-CPQ" secondAttribute="centerX" id="U3i-Vy-Hld"/>
                             <constraint firstItem="yKB-RU-ozY" firstAttribute="leading" secondItem="bEc-pO-IPW" secondAttribute="leading" constant="10" id="hlg-nM-lzL"/>
+                            <constraint firstItem="bEc-pO-IPW" firstAttribute="bottom" secondItem="yKB-RU-ozY" secondAttribute="bottom" constant="141" id="qcZ-oe-t0u"/>
+                            <constraint firstItem="yKB-RU-ozY" firstAttribute="top" secondItem="W2S-Mp-RL4" secondAttribute="bottom" constant="20" id="rz5-8X-E1f"/>
                             <constraint firstItem="xmN-KR-C4S" firstAttribute="centerX" secondItem="HNx-30-CPQ" secondAttribute="centerX" id="uNq-jB-Xb9"/>
                             <constraint firstItem="bEc-pO-IPW" firstAttribute="trailing" secondItem="yKB-RU-ozY" secondAttribute="trailing" constant="10" id="zaB-bA-SVi"/>
                         </constraints>
@@ -74,6 +90,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Your Emoji" id="CrH-nu-WDN"/>
                     <connections>
+                        <outlet property="birthYearLabel" destination="W2S-Mp-RL4" id="TXl-fw-Y1L"/>
+                        <outlet property="categoryLabel" destination="cvF-GB-fkV" id="LW7-mK-ZJq"/>
                         <outlet property="iconImage" destination="xmN-KR-C4S" id="l0G-Dd-G1Y"/>
                         <outlet property="labelText" destination="yKB-RU-ozY" id="zL5-gK-qHg"/>
                     </connections>

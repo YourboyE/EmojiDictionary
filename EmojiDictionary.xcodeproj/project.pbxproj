@@ -14,6 +14,7 @@
 		287BDAD3238361EB00F437C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287BDAD2238361EB00F437C0 /* Assets.xcassets */; };
 		287BDAD6238361EB00F437C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287BDAD4238361EB00F437C0 /* LaunchScreen.storyboard */; };
 		287BDADE238363B400F437C0 /* EmojiTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BDADD238363B400F437C0 /* EmojiTVC.swift */; };
+		288A68BA2384A51B003CF9F1 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68B92384A51B003CF9F1 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		287BDAD5238361EB00F437C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		287BDAD7238361EB00F437C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287BDADD238363B400F437C0 /* EmojiTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTVC.swift; sourceTree = "<group>"; };
+		288A68B92384A51B003CF9F1 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				287BDACB238361E400F437C0 /* SceneDelegate.swift */,
 				287BDADD238363B400F437C0 /* EmojiTVC.swift */,
 				2868C37923838C6E00D1CB60 /* DisplayVC.swift */,
+				288A68B92384A51B003CF9F1 /* Emoji.swift */,
 				287BDACF238361E400F437C0 /* Main.storyboard */,
 				287BDAD2238361EB00F437C0 /* Assets.xcassets */,
 				287BDAD4238361EB00F437C0 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288A68BA2384A51B003CF9F1 /* Emoji.swift in Sources */,
 				287BDADE238363B400F437C0 /* EmojiTVC.swift in Sources */,
 				2868C37A23838C6E00D1CB60 /* DisplayVC.swift in Sources */,
 				287BDACA238361E400F437C0 /* AppDelegate.swift in Sources */,

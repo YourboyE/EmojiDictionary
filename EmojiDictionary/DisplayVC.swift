@@ -12,36 +12,22 @@ class DisplayVC: UIViewController {
     
     @IBOutlet weak var iconImage: UILabel!
     @IBOutlet weak var labelText: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthYearLabel: UILabel!
+    
 
-    var emoji = ""
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        iconImage.text = emoji
-        sentDefinitions()
-       
+        
+        iconImage.text = emoji.theEmoji
+        labelText.text = emoji.theDef
+        categoryLabel.text = "Category: " + emoji.theCategory
+        birthYearLabel.text = "Release Date: \(emoji.theRelDate)"
     }
     
 
-    func sentDefinitions() {
-        if emoji == "🥊" {
-            labelText.text = "You're gonna get punched in the face!"
-        } else if emoji == "🥎" {
-            labelText.text = "let's play ball!"
-        } else if emoji == "🥋" {
-            labelText.text = "OOOUUSSSHHH !"
-        } else if emoji == "🛰" {
-            labelText.text = "beep beep beep beep! "
-        } else if emoji == "🗿" {
-            labelText.text = "Hello Dum Dum! Do you have Gum Gum?"
-        } else if emoji == "🎢" {
-            labelText.text = "WEEEEEEEEE!"
-        } else if emoji == "🔐" {
-            labelText.text = "Keep Out Sucka!"
-        } else if emoji == "🕷" {
-            labelText.text = "RRRRUUUNNN ! Its a spider!"
-        }
-    }
+
 
 }
